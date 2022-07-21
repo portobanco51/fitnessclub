@@ -13,6 +13,23 @@ body {
     width: 0px;
 }
 
+.logo_img {
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: 0 1.25rem;
+}
+
+.Nav_home {
+    text-decoration: none;
+    color: #3a1212;
+    border-bottom: 3px solid #ff2625;
+}
+
+.Nav_exercises {
+    text-decoration: none;
+    color: #3a1212;
+}
+
 .right-arrow,
 .left-arrow {
     cursor: pointer;
