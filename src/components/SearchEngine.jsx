@@ -4,10 +4,9 @@ import { Search } from '@mui/icons-material';
 import { fetchData, exerciseOptions } from '../utils/fetchData';
 import SliderList from './SliderList';
 
-const SearchEngine = () => {
+const SearchEngine = ({ setSearch, bodyPart, setBodyPart }) => {
 
     const [input, setInput] = useState('')
-    const [search, setSearch] = useState([])
     const [list, setList] = useState([])
 
     useEffect(() => {
@@ -29,7 +28,6 @@ const SearchEngine = () => {
 
             setSearch(searchedExercises)
             setInput('')
-            console.log(search)
         }
     }
 
@@ -47,7 +45,7 @@ const SearchEngine = () => {
 
             </Box>
             <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-                <SliderList data={list} />
+                <SliderList data={list} bodyPart={bodyPart} setBodyPart={setBodyPart} />
             </Box>
         </Stack>
     )

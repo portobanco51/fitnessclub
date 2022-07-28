@@ -5,11 +5,14 @@ import HeroBanner from '../components/HeroBanner';
 import SearchEngine from '../components/SearchEngine';
 
 const Home = () => {
+    const [search, setSearch] = useState([])
+    const [bodyPart, setBodyPart] = useState('all')
+
     return (
         <Box>
             <HeroBanner />
-            <SearchEngine />
-            <Exercises />
+            <SearchEngine setSearch={setSearch} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+            <Exercises setSearch={setSearch} bodyPart={bodyPart} setBodyPart={setBodyPart} />
         </Box>
     )
 }
