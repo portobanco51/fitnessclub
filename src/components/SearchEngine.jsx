@@ -28,6 +28,7 @@ const SearchEngine = ({ setSearch, bodyPart, setBodyPart }) => {
 
             setSearch(searchedExercises)
             setInput('')
+            await window.scrollTo({ top: 1750, left: 100, behavior: 'smooth' })
         }
     }
 
@@ -47,7 +48,7 @@ const SearchEngine = ({ setSearch, bodyPart, setBodyPart }) => {
 
             </Box>
             <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-                <SliderList data={list} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+                <SliderList data={list} bodyPart={bodyPart} setBodyPart={setBodyPart} setInput={setInput} handleInput={handleInput} />
             </Box>
         </Stack>
     )
