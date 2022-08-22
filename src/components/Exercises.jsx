@@ -3,6 +3,7 @@ import Pagination from '@mui/material/Pagination';
 import { Box, Stack, Typography } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchData';
+import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({ search, setSearch, bodyPart }) => {
     console.log(search);
@@ -14,7 +15,7 @@ const Exercises = ({ search, setSearch, bodyPart }) => {
 
             <Stack direction='row' sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap='wrap' justifyContent='center'>
                 {search.map((element, i) => {
-                    return <p key={i}>{element.name}</p>
+                    return <ExerciseCard key={i} exercise={element} />
                 })}
             </Stack>
 
