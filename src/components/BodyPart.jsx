@@ -11,20 +11,18 @@ import IconUA from '../assets/icons/upperarms.png';
 import IconUL from '../assets/icons/upperlegs.png';
 import IconWaist from '../assets/icons/waist.png';
 
-const BodyPart = ({ item, setBodyPart, bodyPart, setInput, handleInput }) => {
+const BodyPart = ({ item, setBodyPart, bodyPart }) => {
     return (
         <Stack type="button" alignItems="center" justifyContent="center" className="bodyPart-card" sx={{
             borderTop: bodyPart === item ? '4px solid #ff2625' : '',
-            backgroundColor: '#fff',
-            borderBottomLeftRadius: '20px',
+            backgroundColor: 'rgba(200, 200, 200, 0.3)',
+            borderRadius: '20px',
             width: '270px',
             height: '280px',
             cursor: 'pointer',
             gap: '30px'
         }}
             onClick={(e) => {
-                setInput(item)
-                handleInput(e)
                 setBodyPart(item);
                 window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
             }}
