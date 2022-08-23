@@ -24,15 +24,15 @@ const Detailed = ({ exerciseDetail }) => {
 
 
     return (
-        <Stack gap='60px' sx={{ flexDirection: { lg: 'row' }, p: '20px', alignItems: 'center' }} >
+        <Stack className='detail-hero' gap='60px' sx={{ flexDirection: { lg: 'row' }, p: '20px', pt: '5rem', alignItems: { lg: 'start', xs: 'center' } }} >
             <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
-            <Stack sx={{ gap: { lg: '35px', xs: '20px' } }} >
+            <Stack sx={{ gap: { lg: '35px', xs: '20px' }, alignItems: { lg: 'unset', xs: 'center' } }} >
                 <Typography fontWeight='bold' variant='h3' textTransform='capitalize' >{name}</Typography>
-                <Typography variant='h6' >Exercises keep you strong, {name} is one of the best exercises to target your {target}.It will help you improve your mood and gain energy.
+                <Typography maxWidth='50vh' variant='h6' >Exercises keep you strong, <b>{name}</b> is one of the best exercises to target your <b>{target}.</b><br /> It will help you improve your mood and gain energy.
                 </Typography>
                 {extraInfo.map((i) => (
                     <Stack key={i.name} direction='row' gap='24px' alignItems='center'>
-                        <Button sx={{ background: '#fff2db', borderRadius: '50%', width: '100px', height: '100px' }} >
+                        <Button variant='outlined' sx={{ background: '#fff2db', borderRadius: '50%', width: '100px', height: '100px' }} >
                             <img src={i.icon} alt={i.name} />
                         </Button>
                         <Typography variant='h5' textTransform='capitalize'>
@@ -41,7 +41,7 @@ const Detailed = ({ exerciseDetail }) => {
                     </Stack>
                 ))}
             </Stack>
-        </Stack>
+        </Stack >
     )
 }
 export default Detailed

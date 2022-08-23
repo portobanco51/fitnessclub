@@ -77,9 +77,19 @@ body {
     flex-wrap: wrap;
 }
 
+.detail-hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./assets/images/search.svg);
+    box-shadow: 5px 5px 50rem inset #fff;
+}
+
 .detail-image {
+    padding: 2rem;
     width: 729px;
-    height: 742px;
+    border-radius: 15%;
+    filter: drop-shadow(10px 10px 20px rgba(155, 111, 111, 0.111));
 }
 
 .hero-banner-img {
@@ -98,7 +108,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./assets/images/search.svg);
-    box-shadow: 5px 5px 10rem inset #fff;
+    box-shadow: 5px 5px 50rem inset #fff;
 }
 
 .exercise-card {
@@ -149,6 +159,10 @@ body {
 /* MediaQueries */
 
 @media screen and (max-width: 1200px) {
+    .detail-hero {
+        box-shadow: 15px 15px 100rem inset #fff;
+    }
+
     .detail-image {
         width: 300px;
         height: 300px;
