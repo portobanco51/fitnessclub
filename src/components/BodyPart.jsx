@@ -24,7 +24,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         }}
             onClick={(e) => {
                 setBodyPart(item);
-                window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
+                window.scrollTo({ top: 1300, left: 100, behavior: 'smooth' })
             }}
         >
             <img src={item === 'all' ? Icon : Icon && item === 'back' ? IconBack : Icon && item === 'cardio' ? IconCardio : Icon && item === 'chest' ? IconChest : Icon && item === 'lower arms' ? IconLA : Icon && item === 'lower legs' ? IconLL : Icon && item === 'neck' ? IconNeck : Icon && item === 'shoulders' ? IconShould : Icon && item === 'upper arms' ? IconUA : Icon && item === 'upper legs' ? IconUL : Icon && item === 'waist' ? IconWaist : Icon} alt="dumbbell" style={{
