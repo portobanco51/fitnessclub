@@ -59,7 +59,7 @@ body {
     bottom: -20px;
     right: 80px;
     transform: scale(1, 1);
-    transition: 0.3s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 }
 
 .right-arrow {
@@ -116,7 +116,6 @@ body {
     height: 445px;
     background: #fff;
     border-top: 4px solid var(--color-primary);
-    border-bottom-left-radius: 20px;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
@@ -152,8 +151,12 @@ body {
     flex-direction: column;
     gap: 24px;
     width: 387px;
-    height: 381px;
     text-decoration: none;
+}
+
+.video-img {
+    border-radius: 20px;
+    filter: drop-shadow(0px 10px 20px rgba(148, 146, 146, 0.756));
 }
 
 /* MediaQueries */
@@ -174,7 +177,7 @@ body {
 
     .left-arrow,
     .right-arrow {
-        position: static !important;
+        position: static;
     }
 
     .hero-banner-img {
@@ -192,7 +195,7 @@ body {
 
     .exercise-video {
         width: 320px;
-        height: 300px;
+        margin: 3rem;
     }
 }
 

@@ -34,8 +34,8 @@ const Exercises = ({ search, setSearch, bodyPart }) => {
 
 
     return (
-        <Box sx={{ mt: { lg: '110px' } }} mt='50px' p='20px'>
-            <Typography variant='h3' mb='46px'>
+        <Box sx={{ mt: { lg: '6rem', xs: '3rem' } }} mt='50px' p='20px'>
+            <Typography variant='h5' textAlign='center' mb='46px'>
                 Showing Results ( {firstElementIndex + 1} - {lastElementIndex} )
             </Typography>
 
