@@ -4,9 +4,9 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
 
     if (!exerciseVideos.length) return 'Loading...'
     return (
-        <Box sx={{ marginTop: { lg: '6.5rem', xs: '4rem' } }} p='20px' >
+        <Box sx={{ mt: { lg: '6.5rem', xs: '4rem' } }} p='20px' >
             <Typography variant='h3' mb='4rem' textAlign='center'>
-                Check some <a href={`https://www.youtube.com/results?search_query=${name}`} target='_blank' rel='noreferrer' style={{ color: '#ff2625', textTransform: 'capitalize', textDecoration: 'underline' }}>{name}</a> exercise videos!
+                📱 Check some <a href={`https://www.youtube.com/results?search_query=${name}`} target='_blank' rel='noreferrer' style={{ color: '#ff2625', textTransform: 'capitalize', textDecoration: 'underline' }}>{name}</a> exercise videos! 📺
             </Typography>
             <Stack justifyContent='center' flexWrap=' wrap' alignItems='center' sx={{ flexDirection: { lg: 'row' }, gap: { lg: '110px', xs: '0' } }}
             >

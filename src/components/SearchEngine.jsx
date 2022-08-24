@@ -34,12 +34,12 @@ const SearchEngine = ({ setSearch, bodyPart, setBodyPart }) => {
 
     return (
         <Stack id='search' className='search' alignItems='center' mt='37px' justifyContent={'center'} p='20px'>
-            <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb='50px' textAlign={'center'} >Awesome Exercises You <br /> Should Know</Typography>
+            <Typography fontWeight={700} sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb='50px' textAlign={'center'} ><span style={{ textDecoration: 'underline', color: '#ff2625' }} >Awesome</span> Exercises You <br /> Should Know</Typography>
             <Box position='relative' mb='72px'>
                 <form action="get" onSubmit={handleInput}>
                     <TextField sx={{
                         input: { fontWeight: '700', border: 'none', borderRadius: '4px' }, width: { lg: '800px', xs: '350px' },
-                        backgroundColor: '#fff', borderRadius: '40px'
+                        backgroundColor: '#fff'
                     }} height='76px' value={input} onChange={(e) => { setInput(e.target.value.toLowerCase()) }} placeholder="Search Exercises" type={'text'} />
                     <Button onClick={handleInput} className="search-btn" sx={{
                         bgcolor: '#FF2625', color: '#fff', textTransform: 'none', width: { lg: '175px', xs: '80px' }, fontSize: { lg: '20px', xs: '14px' }, height: '56px', position: "absolute", right: '0'
@@ -47,7 +47,7 @@ const SearchEngine = ({ setSearch, bodyPart, setBodyPart }) => {
                 </form>
             </Box>
             <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-                <SliderList data={list} bodyPart={bodyPart} setBodyPart={setBodyPart} setInput={setInput} handleInput={handleInput} />
+                <SliderList data={list} bodyPart={bodyPart} setBodyPart={setBodyPart} setInput={setInput} handleInput={handleInput} isBodyParts />
             </Box>
         </Stack>
     )

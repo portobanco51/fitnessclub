@@ -1,23 +1,23 @@
-import { Box, Stack, Typography, Button } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 import HeroBannerImage from '../assets/images/banner.png'
 
 const HeroBanner = () => {
     return (
-        <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} position='relative' p='20px' >
+        <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} display='flex' flexDirection='column' position='relative' p='20px' >
 
-            <Typography color='#ff2625' fontSize='1.625rem' fontWeight='600'>
+            <Typography sx={{ textAlign: { lg: 'left', md: 'left', xs: 'center' } }} color='#ff2625' fontSize='1.625rem' fontWeight='600'>
                 Fitness Club
             </Typography>
 
-            <Typography fontWeight={'700'} sx={{ fontSize: { lg: '44px', xs: '40px' } }} mb='23px' mt='30px' >
+            <Typography fontWeight={'700'} sx={{ fontSize: { lg: '44px', xs: '40px' }, textAlign: { lg: 'left', md: 'left', xs: 'center' } }} mb='23px' mt='30px' >
                 Sweat, Smile <br /> and Repeat
             </Typography>
 
-            <Typography fontSize={'22px'} lineHeight='35px' mb={4}>
+            <Typography sx={{ textAlign: { lg: 'left', md: 'left', xs: 'center' } }} fontSize={'22px'} lineHeight='35px' mb={4}>
                 Check out the most effective exercises
             </Typography>
 
-            <Button variant='contained' href='#search' color='error' sx={{ backgroundColor: '#ff2625', padding: '10px' }} >Explore Exercises</Button>
+            <Button variant='contained' href='#search' color='error' sx={{ backgroundColor: '#ff2625', padding: '10px', width: '12rem', alignSelf: { lg: 'start', md: 'start', xs: 'center' } }} >Explore Exercises</Button>
 
             <Typography color={'#ff2625'} fontWeight='600' sx={{
                 opacity: 0.1,

@@ -27,7 +27,7 @@ const Detailed = ({ exerciseDetail }) => {
         <Stack className='detail-hero' gap='60px' sx={{ flexDirection: { lg: 'row' }, p: '20px', pt: '5rem', alignItems: { lg: 'start', xs: 'center' } }} >
             <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
             <Stack sx={{ gap: { lg: '35px', xs: '20px' }, alignItems: { lg: 'unset', xs: 'center' } }} >
-                <Typography fontWeight='bold' variant='h3' textTransform='capitalize' >{name}</Typography>
+                <Typography fontWeight='bold' variant='h3' textTransform='capitalize' color='#ff2625' >{name}</Typography>
                 <Typography maxWidth='50vh' variant='h6'  >Exercises keep you strong, <b>{name}</b> is one of the best exercises to target your <b>{target}.</b><br /> It will help you improve your mood and gain energy.
                 </Typography>
                 {extraInfo.map((i, index) => (

@@ -34,10 +34,10 @@ const Exercises = ({ search, setSearch, bodyPart }) => {
 
 
     return (
-        <Box sx={{ mt: { lg: '6rem', xs: '3rem' } }} mt='50px' p='20px'>
-            <Typography variant='h5' textAlign='center' mb='46px'>
+        <Box id='exercises' sx={{ mt: { lg: '6rem', xs: '3rem' } }} mt='50px' p='20px'>
+            {search.length > 9 && <Typography variant='h5' textAlign='center' mb='46px'>
                 Showing Results ( {firstElementIndex + 1} - {lastElementIndex} )
-            </Typography>
+            </Typography>}
 
             <Stack direction='row' sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap='wrap' justifyContent='center'>
                 {currentExercises.map((element, i) => {

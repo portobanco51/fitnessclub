@@ -113,7 +113,6 @@ body {
 
 .exercise-card {
     width: 400px;
-    height: 445px;
     background: #fff;
     border-top: 4px solid var(--color-primary);
     text-decoration: none;
@@ -123,16 +122,17 @@ body {
     padding-bottom: 10px;
     transform: scale(1, 1);
     transition: 0.2s all ease-in-out;
+    border-radius: 20px;
+    filter: drop-shadow(0px 10px 20px rgba(148, 146, 146, 0.756));
 }
 
 .exercise-card img {
     height: 326px;
+    border-radius: 20px;
 }
 
 .bodyPart-card {
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
     backdrop-filter: blur(20px) saturate(180%);
-    transform: scale(1, 1);
     transition: 0.2s all ease-in-out;
 }
 
@@ -152,11 +152,33 @@ body {
     gap: 24px;
     width: 387px;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.exercise-video:hover {
+    transform: scale(1.1);
 }
 
 .video-img {
     border-radius: 20px;
     filter: drop-shadow(0px 10px 20px rgba(148, 146, 146, 0.756));
+}
+
+.footer-container {
+    background-image: url(./assets/images/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 4rem inset #fff;
+}
+
+.footer-icon {
+    backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 10px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+    align-items: center;
 }
 
 /* MediaQueries */
@@ -173,6 +195,7 @@ body {
 
     .react-horizontal-scrolling-menu--scroll-container {
         width: 500px;
+        align-items: center;
     }
 
     .left-arrow,
@@ -199,7 +222,7 @@ body {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 901px) {
     .hero-banner-img {
         display: none;
     }
