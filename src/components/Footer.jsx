@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 import Logo from '../assets/images/Logo.png'
+import MetaImg from '../assets/images/metaImg.png';
 
 const Footer = () => {
     return (
@@ -10,6 +11,7 @@ const Footer = () => {
                     A club for <span style={{ color: '#ff2625', textDecoration: 'underline' }} >Health & Wellness</span> 💗
                 </Typography>
             </Stack>
+            <img src={MetaImg} alt="metaImg" className='meta-img' />
         </Box >
     )
 }

@@ -222,6 +222,10 @@ body {
     }
 }
 
+.meta-img {
+    max-width: 0px;
+}
+
 @media screen and (max-width: 901px) {
     .hero-banner-img {
         display: none;
