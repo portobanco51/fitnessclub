@@ -223,7 +223,7 @@ body {
 }
 
 .meta-img {
-    max-width: 0px;
+    display: none;
 }
 
 @media screen and (max-width: 901px) {
