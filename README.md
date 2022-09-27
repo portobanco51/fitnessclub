@@ -1,4 +1,4 @@
-# Welcome to get_gif!
+# **Welcome to Fitness Club!**
 
 **Welcome to Fitness Club**. This react.js based project, main objective is to fetch the information form ExerciseDB using a custom hook and display it accordingly to the users input. Moreover the each item fetched from the ExerciseDB request response will asynchronously get videos information related to it's content and showcase it to the user as an alternative resource.
 
