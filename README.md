@@ -6,6 +6,10 @@
 
 This are the main technologies and dependencies that where used to bring this app to life!
 
+## RESTful API
+
+A couple database requests are used to handle the information about the exercises and Youtube videos, RapidAPI provided endpoints for Exercise.db and YoutubeAPI.
+
 ## React.js
 
 The are several reason on why choosing react.js for this project, but the main ones are the component reusability, react's JSX extended syntax for HTML, and the high performance reinforced by the Virtual DOM.
