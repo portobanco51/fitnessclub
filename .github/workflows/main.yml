@@ -47,6 +47,6 @@ jobs:
 
             - name: Install Netlify CLI and deploy to prod
               run: |
-                  npm install netlify-cli --save-dev 
+                  npm install netlify-cli --save-dev --legacy-peer-deps --force
                   netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --dir=build --prod
                   echo App is live
