@@ -31,7 +31,7 @@ jobs:
 
             - name: Generate API keys
               run: |
-                  echo REACT_APP_API_KEY=$API_KEY > .env
+                  echo REACT_APP_RAPID_API_KEY=$API_KEY > .env
                   echo API keys generated successfully
 
             - name: Build project for production
