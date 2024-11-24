@@ -1,28 +1,67 @@
-# **Welcome to Fitness Club!**
+<h1 align="center">Fitness Club 🏃‍♂️💪</h1>
 
-**Welcome to Fitness Club**. This react.js based project, main objective is to fetch the information form ExerciseDB using a custom hook and display it accordingly to the users input. Moreover the each item fetched from the ExerciseDB request response will asynchronously get videos information related to it's content and showcase it to the user as an alternative resource.
+###
 
-# Technologies & Dependencies
+<h2 align="left">Project Overview 🔎</h2>
 
-This are the main technologies and dependencies that where used to bring this app to life!
+###
 
-## RESTful API
+<p align="left">This React.js-based project is designed to fetch and display exercise information from <b>ExerciseDB API</b> using a custom hook, tailored to <b>user input</b>. Each item retrieved from the ExerciseDB will <b>asynchronously fetch</b> related video content, providing users with alternative resources to enhance their fitness journey.</p>
 
-A couple database requests are used to handle the information about the exercises and Youtube videos, RapidAPI provided endpoints for Exercise.db and YoutubeAPI.
+###
 
-## React.js
+<h2 align="left">Extra Features 🌟</h2>
 
-The are several reason on why choosing react.js for this project, but the main ones are the component reusability, react's JSX extended syntax for HTML, and the high performance reinforced by the Virtual DOM.
+-   Custom react hook to fetch ExerciseDB and Youtube options data at Exercises.jsx and SearchEngine.jsx components **( FetchData.js )**.
+-   Hidden **sourcemap** production for minimized react structure on deploy to improve security and machine performance.
+  
+###
 
-## MUI
+<h2 align="left">Technologies & tools 💻🔬</h2>
 
-The easy integration for production-ready components with the react.js environment made MUI the main styling library for this web app.
+###
 
-## react-horizontal-scroll
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=netlify" height="45" alt="netlify logo"  />
+  <img width="15" />
+  <img src="https://skillicons.dev/icons?i=githubactions" height="45" alt="githubactins logo"  />
+  <img width="15" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="45" alt="fastapi logo"  />
+  <img width="15" />
+  <img src="https://skillicons.dev/icons?i=materialui" height="45" alt="materialui logo"  />
+  <img width="15" />
+  <img src="https://skillicons.dev/icons?i=react" height="45" alt="react logo"  />
+  <img width="15" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="45" alt="npm logo"  />
+  <img width="15" />
+  <img src="https://skillicons.dev/icons?i=jest" height="45" alt="jest logo"  />
+  <img width="15" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="45" alt="vscode logo"  />
+  <img width="15" />
+</div>
 
-This npm package made easy the task for the interactive horizontal scroll behavior with high-performant components within the Virtual DOM.
+<h2 align="left">CI/CD Integration with GitHub Actions 🔄</h2>
 
-# Extra side features
+To further enhance the project, I have integrated **Continuous Integration and Continuous Deployment (CI/CD)** using **GitHub Actions**. This feature automates the deployment process, ensuring that updates are delivered efficiently and reliably.
 
--   Custom react hook to fetch ExerciseDB and Youtube options data at Exercises.jsx and SearchEngine.jsx components **( FetchData.js )**
--   Hidden **sourcemap** production command for minimized react structure on deploy to improve security and machine performance
+### Benefits:
+- **Faster Delivery**: Automating the deployment process reduces the time between code changes and live updates, allowing for quicker iterations and feedback.
+- **Consistency**: A standardized build and deployment process minimizes the risk of human error, leading to more stable releases.
+- **Scalability**: This CI/CD setup can be easily extended to include additional testing and deployment environments, supporting future growth and complexity of the project.
+
+###
+
+<h2 align="left">Conclusion 🏁</h2>
+
+###
+
+<p align="left">This Fitness Club web application showcases my commitment to delivering a high-quality user experience through interactive features and efficient data handling. Feel free to explore the app, and I welcome any feedback or collaboration opportunities!<br><br>
+  
+**Thank you for visiting!**
+
+
+###
+
+![image](https://github.com/user-attachments/assets/9a0ad449-68c5-4fb4-92e1-9b93b82d46b1)
+<br><br>
+
