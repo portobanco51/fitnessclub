@@ -49,6 +49,8 @@ To further enhance the project, I have integrated **Continuous Integration and C
   <img width="15" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="45" alt="npm logo"  />
   <img width="15" />
+  <img src="https://skillicons.dev/icons?i=git" height="45" alt="git logo"  />
+  <img width="15" />
   <img src="https://skillicons.dev/icons?i=jest" height="45" alt="jest logo"  />
   <img width="15" />
   <img src="https://skillicons.dev/icons?i=vscode" height="45" alt="vscode logo"  />
